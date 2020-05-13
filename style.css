@@ -1,0 +1,118 @@
+.title{
+    font: 50px/1.5 Helvetica, sans-serif;  
+    text-transform: uppercase ;   
+    font-weight: 800;
+}
+
+h1, h2, h3, p{
+    padding-bottom: 1rem;
+}
+
+h1, h2, h3{
+    padding-top: 1rem;
+    font: 1em/1.2 Georgia, serif;
+    font-weight: bold;
+}
+
+body{
+    background: rgb(238, 238, 238);
+    font: 16px/1.5 Helvetica, sans-serif;  
+}
+
+body, button, input, select{
+    font:inherit;
+}
+
+.site{
+    background: rgb(238, 238, 238);
+    margin: 0 auto;
+    border: 2px solid lightgray;
+    padding: 2% 20%;
+    color: rgb(51, 51, 51);
+}
+
+header{
+    border-bottom: 3px solid #000;
+}
+
+aside{
+    padding-top: 1em;
+}
+
+.site-title{
+    font: 36px/1 Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+}
+
+blockquote{
+    font-style: italic;
+    font-family: Georgia, serif;
+    border-left: 2px solid lightgray;
+    width: 20em;
+    padding-left: 3em;
+    box-sizing: border-box;
+    padding-bottom:2.5em;
+}
+
+.author{
+    text-align: right;
+}
+
+img{
+    padding: 0.5em;
+    border: 3px solid gray;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 0.1em 0 rgba(0,0,0.25);
+}
+
+section ul{
+    padding-left: 3em;
+}
+
+section ul li a{
+    text-decoration: none;
+    color: green;
+}
+@media (min-width: 600px){
+    .inside{
+        display: flex;
+    }
+    .text-right{
+        flex: 1 0 60%;  
+        order: 2;
+    }
+    .text-left{
+        flex: 1 0 60%;  
+        order: 1;
+    }
+    .img-left{
+        flex: 1 0 30%;
+        order: 1;
+        margin: 0 1em 1em 0;
+    }
+    
+    .img-right{
+        flex: 1 0 30%;
+        margin: 0 0 1em 1em;
+        order: 2;
+    }
+}
+
+@media (min-width: 1201px){
+    .wrapper{
+        display: flex;
+    }
+
+    main{
+        padding-top: 1em;
+        flex: 1 0 65%;
+    }
+
+    aside{
+        flex: 1 0 20%;
+        margin-left: 0;
+        padding-left: 2em;
+    }
+}

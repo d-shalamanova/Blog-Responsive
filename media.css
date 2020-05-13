@@ -1,0 +1,246 @@
+label{
+    padding-bottom: 1em;
+}
+
+.site-nav{
+    display: none;
+    background: #fff;
+
+}
+
+.site-nav li{
+    display: block;
+    list-style: none;
+    background-color: #333;
+    border-radius: 0.5em;
+}
+
+
+.site-nav a{
+    display: block;   
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.site-nav-label{
+    display: none;
+}
+
+.site-nav li:hover > a, 
+.site-nav a:hover{
+    background: #090;
+    border-radius: 0.5em;
+}
+
+.site-nav ul ul li:hover {
+    background: darkgreen;
+    border-radius: 0.5em;
+}
+
+.site-nav-toggle + .site-header .site-nav-label .open {display: block;}
+.site-nav-toggle + .site-header .site-nav-label .close {display: none;}
+
+.site-nav-toggle:checked + .site-header .site-nav-label .open {display: none;}
+.site-nav-toggle:checked + .site-header .site-nav-label .close {display: block;}
+
+.site-nav-toggle:checked + .site-header .site-nav{
+    display: block;
+}
+
+input {
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@media (max-width: 600px){
+    .site{
+        padding: 1em 6em;
+        max-width: 37.50em;
+    }
+
+    h1{
+        display: block;
+        margin: auto;
+        text-align: center;
+        padding: 0.5em 0;
+    }
+
+    .site-nav{
+        padding-top: 0.5em;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+    }
+
+    .site-nav-label{
+        display: block;
+        margin: auto;
+        text-align: center;
+        font-size: 1.1em;
+        font-weight: 700;
+    }
+
+    .site-header{
+        display: block;
+        margin: auto;
+    }
+    .site-nav ul li,
+    .site-nav ul ul li{
+        margin-bottom: 0.5em;    
+    }
+
+    .site-nav ul ul{
+        background: #fff;
+        padding-left: 1em;
+    }
+}
+
+@media (min-width: 601px){
+    .site{
+        padding: 1em 3em;
+        max-width: 56.25em;
+    }
+
+    h1{
+        display: block;
+        margin: auto;
+        text-align: left;
+        padding: 1em 1em;
+    }
+
+    .site-nav{
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+        padding-top: 0.4em;
+    }
+
+    .site-nav-label{
+        display: block;
+        margin: auto;
+        text-align: center;
+        font-size: 1.1em;
+        font-weight: 700;
+    }
+
+    .site-header{
+        display: block;
+        margin: auto;
+    }
+    .site-nav ul li,
+    .site-nav ul ul li{
+        margin-bottom: 0.5em;    
+    }
+
+    .site-nav ul ul{
+        background: #fff;
+        padding-left: 1em;
+    }
+}
+
+@media (min-width: 900px){
+    .site{
+        padding: 1em 3em;
+        max-width: 60em;
+    }
+
+    .site-nav-label{
+    display: none;
+    }
+
+    .site-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em 0;
+        border-bottom: 2px solid rgb(0, 0, 0);
+    }
+
+    .site-nav{
+        display: block;
+        background: #fff;
+        padding: 0.7em;
+        border-radius: 0.5em;
+    }
+
+    .site-nav > ul {
+        display: flex;
+       }
+
+    .site-nav ul ul{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left:0;
+        min-width: 10em;
+    }
+
+    .site-nav ul ul ul{
+        top: 0;
+        left: 100%;
+    }
+
+    .site-nav li:hover > ul{
+        display: block;
+    }
+
+    .site-nav li{
+        position: relative;
+        background-color: #333;
+        border-radius: 0.5em;
+        margin-right: 0.4em;
+    }   
+}
+
+@media (min-width: 1200){
+    .site{
+        padding: 1em 3em;
+        max-width: 120em;
+    }
+
+    .site-nav-label{
+    display: none;
+    }
+
+    .site-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid rgb(0, 0, 0);
+    }
+
+    .site-nav{
+        display: block;
+        border-radius: 0.5em;
+    }
+
+    .site-nav > ul {
+        display: flex;
+       }
+
+    .site-nav ul ul{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left:0;
+        min-width: 10em;
+    }
+
+    .site-nav ul ul ul{
+        top: 0;
+        left: 100%;
+    }
+
+    .site-nav li:hover > ul{
+        display: block;
+    }
+
+    .site-nav li{
+        position: relative;
+        background-color: #333;
+        border-radius: 0.5em;
+        margin-right: 0.4em;
+    }   
+}
